@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.numberBar {
+  background-color: black;
+  height: 1rem;
+  margin: 0 1rem;
+  color: white;
+}
+.style1 {
+  background-color: #f50057;
+  color: aliceblue;
+  width: 10rem;
+  height: 10rem;
+}
+
+.zoom-in-out-box {
+  margin: 24px;
+  width: 50px;
+  height: 50px;
+  background: #f50057;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.quiet {
+  background-color: white;
+}
+
+.noise {
+  background-color: transparent;
+  color:black;
+  animation: zoom-down 1s ease infinite;
+}
+
+@keyframes zoom-down {
+  from {top:200px}
+  0% {
+    
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(20, 20);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
